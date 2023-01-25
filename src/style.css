@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+ /* Linked buttons*/
+
+#container {
+
+    Display: flex;
+    align-items: center;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+/* TEXT*/
+
+.wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+        border: 2px solid white ;
+        border-width: 30px;
+    
+}
+
+.wrapper .static-txt {
+    color:whitesmoke;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+
+
+}
+
+.wrapper .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+
+
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+
+
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-left: 2px solid transparent;
+    animation: typing 3s steps(10) infinite;
+    text-align: center;
+
+
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
+
+    }
+
+    100% {
+        left: 0;
+
+    }
+}
+
+h1 {
+    color: #a5bdfd;
+    background: white;
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 40px;
+    margin: 20 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ h1:hover {
+     background: white;
+ }
+ 
+
+ 
+h2 {
+    Text-align: center;
+    color: #a5bdfd;
+
+}
+h5 {
+    color: black;
+    text-align: center;
+    Text-shadow: 0 0 5px #999;
+}
+
+
+ 
+.border {
+    width: 100px;
+    height: 10px;
+    background: #000000;
+    margin: 40px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+
+.item {
+
+    Margin-bottom: 24px;
+    Font-size: 16px;
+    Color: white;
+
+
+    Height: 100px;
+
+    Display: inline-block;
+
+
+}
+
+button {
+
+    width: 180px;
+    color: #a5bdfd;
+    font-size: 20px;
+    Font-family: "montserrat";
+    padding: 12px 12px;
+    background: transparent;
+    border: 1px;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+
+a {
+    text-decoration: none;
+}

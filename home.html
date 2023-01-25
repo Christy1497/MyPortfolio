@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/0eeca4c74b.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+
+  <style>
+    
+
+    .hero {
+      width: 100%;
+      height: 100vh;
+      background-image: url('pics/alexander-grey-SavQfLRm4Do-unsplash.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card1 {
+      width: 300px;
+      height: 370px;
+      display:flex;
+      border-radius: 10px;
+      padding: 15px 25px;
+      box-sizing: border-box;
+      cursor: pointer;
+      margin: 10px 15px;
+      background-image: url("pics/My photo.jpg");
+      background-position: left;
+      background-size: cover;
+      left: 5px;
+      top: 10px;
+    }
+
+   .name{
+  color: white;
+  position: relative;
+  left: 130px;
+  bottom: 30px;
+   }
+
+   /*BUTTONS*/
+   #myResumeBtn{
+   transition: 0.4s;
+  padding: 5px;
+  margin: 4px 2px;
+border-radius: 25px;
+background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+#myResumeBtn:hover{
+   background:#a5bdfd;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#certBtn{
+   transition: 0.4s;
+  padding: 3px;
+  margin: 4px 2px;
+  border-radius: 25px;
+  background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+}
+#certBtn:hover{
+  background:#a5bdfd;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#aboutMeBtn{
+   transition: 0.4s;
+  padding: 5px;
+   margin: 4px 2px;
+border-radius: 15px;
+background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+#aboutMeBtn:hover{
+  background:#a5bdfd;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#servicesBtn{
+   transition: 0.4s;
+  padding: 3px;
+  margin: 4px 2px;
+border-radius: 15px;
+ background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+
+}
+#servicesBtn:hover{
+   background:#a5bdfd;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#contactBtn{
+  transition: 0.4s;
+  padding: 5px;
+  margin: 4px 2px;
+border-radius: 35px;
+background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+#contactBtn:hover{
+   background:#a5bdfd;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+   
+/*MY RESUME*/
+#resume{
+  background-image: url(pics/carpet\ background.jpg);
+}
+    #container {
+      width: 900px;
+      margin: 0 auto;
+    }
+
+    .skills {
+      border: 1px solid transparent;
+      width: 50%;
+      float: left;
+      padding: 45px;
+    }
+
+    .containerr {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /**background: linear-gradient(166.82deg #6c1f5b 0%, #35065e 100%);**/
+    }
+
+    .card {
+      width: 45rem;
+      padding: 1rem 1rem 3.5rem 2rem;
+      background: rgba(255, 255, 255, 0.09);
+      border-radius: 1rem;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(0.5rem);
+      -webkit-backdrop-filter: blur (0.5rem);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      cursor: pointer;
+      top: 150px;
+    }
+
+.process-card{
+
+width: 45rem;
+      padding: 1rem 1rem 3.5rem 2rem;
+      background: rgba(255, 255, 255, 0.09);
+      border-radius: 1rem;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(0.5rem);
+      -webkit-backdrop-filter: blur (0.5rem);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      
+
+}
+    .label-box {
+      bottom: 800px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1.5rem 0 0.5rem 0;
+    }
+
+    .percentage {
+      font-size: 0.7rem;
+      color: white;
+      font-weight: 400;
+      letter-spacing: 0.09rem;
+    }
+
+    .label {
+      font-size: 0.9rem;
+      color: white;
+      font-weight: 400;
+      letter-spacing: 0.09rem;
+    }
+
+    .progress {
+      height: 0.9rem;
+      border-radius: 0.5rem;
+      background-color: white;
+      animation: progressFill 2s 1;
+    }
+    @keyframes progressFill {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    .ban {
+    
+      background: linear-gradient(
+        111.5deg,
+        rgb(163, 197, 230) 1.4%,
+        rgb(148, 150, 213) 39.3%,
+        rgb(159, 139, 208) 68.4%,
+        rgb(159, 121, 198) 89.7%,
+        rgb(157, 101, 203) 99.9%
+      );
+      cursor: pointer;
+      padding: 32px 55px;
+      margin: 80px;
+      border: 1px #a5bdfd;
+      border-radius: 45px;
+      transition: all 200ms ease-in-out;
+      text-decoration: none;
+      text-align: center;
+      
+    }
+
+    .ban:hover {
+      background:#a5bdfd;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+  
+    .carousel-item {
+      padding: 250px;
+    }
+
+    
+/* About Me*/
+#services{
+background-image: url('pics/resume\ backgroud.jpg');
+
+}
+
+ p{ text-align: center;
+   color:black; 
+}
+
+
+a{  Text-decoration: none;
+    Color:white;
+    Cursor: pointer;
+   }
+a:hover,
+a:active {
+    color: #77529e;
+}
+
+
+
+
+#container{
+width: 900px;
+margin: 0 auto;
+}
+
+
+.cards{
+    width:300px;
+    height: 500px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: relative;
+    Display: inline-block;
+    Margin: 15px 15px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50px;
+
+
+}
+.cards:hover, .cards:active{
+  background-color: #d9f2ff;
+  font-size: 105%;
+
+}
+
+/*CONTACT INFO*/
+#contact{
+
+  background-image: url('pics/pexels-karolina-grabowska-4207488.jpg');
+  background-repeat: no-repeat;
+}
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #FFFFFF;
+  padding: 20px 40px;
+  outline: none;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.contact-form-text:hover{
+  box-shadow: 0 0 10px 4px #a5bdfd; 
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  position: relative;
+  left: 180px;
+ background: linear-gradient(111.5deg, rgb(163, 197, 230) 1.4%, rgb(148, 150, 213) 39.3%, rgb(159, 139, 208) 68.4%, rgb(159, 121, 198) 89.7%, rgb(157, 101, 203) 99.9%);
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #77529e; 
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+address{
+        color:white;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: linear-gradient(111.5deg, rgb(163, 197, 230) 1.4%, rgb(148, 150, 213) 39.3%, rgb(159, 139, 208) 68.4%, rgb(159, 121, 198) 89.7%, rgb(157, 101, 203) 99.9%);
+  color: #a5bdfd; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 60px;
+}
+
+#myBtn:hover {
+  background-color: #a5bdfd55; /* Add a dark-grey background on hover */
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+   
+#location{
+font-style: italic;
+  position: relative;
+  left: 60%;
+  top:150px;
+}
+.fa-solid{
+Width: 40px;
+Height: 30px;
+Line-height: 30px;
+Background-color: #a5bdfd;
+Text-align: center;
+Color: white;
+Border-radius: 60%;
+Margin-right: 10px;
+text-decoration-color:white;
+Display:inline;
+Padding:5px;
+ Cursor: pointer;
+Transition: all 200ms ease-in-out;
+}
+
+.fa-solid:hover {
+Background: #d9f2ff; 
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.fa-brands{
+
+Width: 40px;
+Height: 30px;
+Line-height: 30px;
+Background-color: #a5bdfd;
+Text-align: center;
+Color: white;
+Border-radius: 60%;
+Margin-right: 10px;
+text-decoration-color:white;
+Display:inline;
+Padding:5px;
+Cursor: pointer;
+Transition: all 200ms ease-in-out;
+}
+
+.fa-brands:hover {
+Background: #d9f2ff; 
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+}
+.details{
+         Display:inline;
+        text-align: center;
+         width: 50%;
+         position: relative;
+         left: 60%;
+          top:450px;
+}
+
+
+  </style>
+
+
+
+
+
+  <body>
+
+<section id="Intro">
+     
+    <!---- LINKED PAGES-->
+
+    <div class="hero">
+      <div class="container">
+        <div class="navbar">
+           <div class="card1"></div>
+          <nav>
+            <ul>
+              <li>
+                <button  id="myResumeBtn"><a href="#resume">MY RESUME</a></button>
+              </li>
+               <li>
+                <button id="certBtn"><a href="#Certifications">CERTIFICATIONS</a></button>
+              </li>
+              <li>
+                <button id="aboutMeBtn"><a href="#about">ABOUT ME</a></button>
+              </li>
+              <li>
+                <button id="servicesBtn"><a href="#services">SERVICES</a></button>
+              </li>
+              <li>
+                <button id="contactBtn"><a href="#contact">CONTACT US</a></button>
+
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+       
+    
+
+     
+
+      <br />
+
+      <div class="name"><strong>NOMAGUGU CHRISTINE ZEMURA</strong></div>
+      <br />
+      <br />
+
+      <!--ANIMATION TEXT-->
+      <div class="wrapper">
+        <div class="static-txt">I'm a</div>
+        <ul class="dynamic-txts">
+          <li><span>Software Developer</span></li>
+          <li><span>Masters Student</span></li>
+          <li><span>Freelancer</span></li>
+          <li><span>Entreprenuer</span></li>
+        </ul>
+      </div>
+    </div>
+
+    </section>
+
+
+
+    <!--MY RESUME-->
+
+    <section id="resume">
+<div class="myresume" >
+
+
+ <h1>My Resume</h1>
+    <br />
+    <div class="container text-center">
+      <div class="row">
+        <div class="col align-self-start">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row row-cols-md-2">
+              <div class="col-md-4">
+                <img
+                  src="pics/EUL Logo.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Feb 2016 - Jan 2020</h5>
+                  <p class="card-text">
+                    I graduated from the European University of Lefke with a Bsc
+                    in Computer Engineering. For my final year project i made an
+                    Android application for taking attendance in class using
+                    Kotlin in Android studio
+                  </p>
+                  <p> <a href = https://www.gigabyteltd.com target="_blank">Gigabyte.Ltd</a></p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col align-self-center">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-2">
+              <div class="col-md-4">
+                <img
+                  src="pics/Gigabyte ltd Logo.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">July 2019 - Sept 2019</h5>
+                  <p class="card-text">
+                    I took an internship support program for trainning qualified
+                     personnel in software development and services in the field
+                    of information technologies. I learnt more in android
+                    development in specific.
+                  </p>
+                 <p> <a href = https://www.eul.edu.tr target="_blank">European University of Lefke</a></p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+ <div class="containerr">
+      <div class="process-card">
+        <div class="label-box">
+          <div class="label">HTML</div>
+          <div class="percentage">93%</div>
+        </div>
+
+        <div class="progress-bg">
+          <div class="progress" style="max-width: 93%"></div>
+        </div>
+
+        <div class="label-box">
+          <div class="label">CSS</div>
+          <div class="percentage">75%</div>
+        </div>
+
+        <div class="progress-bg">
+          <div class="progress" style="max-width: 75%"></div>
+        </div>
+
+        <div class="label-box">
+          <div class="label">JS</div>
+          <div class="percentage">65%</div>
+        </div>
+
+        <div class="progress-bg">
+          <div class="progress" style="max-width: 65%"></div>
+        </div>
+      </div>
+       <a href= "pics/IT_CV.pdf"  target="_blank" alt="my resume" class="ban" download>DOWNLOAD RESUME</a>
+    </div>
+
+     
+    </div>
+
+    
+
+     
+      
+</div>
+</section>
+
+
+<section id="Certifications">
+    <h1>Certifications</h1>
+
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="6000">
+          <img
+            src="pics/graphics desihn certificate.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+
+        <div class="carousel-item" data-bs-interval="6000">
+          <img
+            src="pics/SheCodes Certificate.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+
+        <div class="carousel-item" data-bs-interval="6000">
+          <img src="pics/SheCodes Plus.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</section>
+
+
+
+    <!--ABOUT ME-->
+<section id="about">
+    <h1>About me</h1>
+
+<br>
+<br>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col align-self-start">
+      I'm a self taught web developer with knowledge in HTML, CSS and Javascript.
+      I have a Bsc in Computer Engineering which i studied at the European University of Lefke from the year 2016-2020.
+
+    </div>
+    <div class="col align-self-center">
+        I'm also an entrepreneur running a small business of selling eyewear.
+        It's just a niche market that caught my eye and that I find interesting.
+        Eyewear is a very important accessory that can compliment your sense of style.  
+    </div>
+  </div>
+</div>
+<br>
+<br>
+</section>
+
+
+<!--SERVICES-->
+<section id="services">
+<h1>Services</h1>
+<br>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col">
+    <div class="cards">
+      <img src="pics/C1C131BE-2037-42A6-BA8E-6B70ABCF7E10.PNG" class="card-img-top" alt="..." height="200px">
+      <div class="card-body">
+        <h5 class="card-title" color="black">CLARACASA SUNGLASSES</h5>
+         <br>
+        <p class="card-text"> I'm an entrepreneur running a small business of selling eyewear.
+        It's just a niche market that caught my eye and that I find interesting.
+        Eyewear is a very important accessory that can compliment your sense of style.  </p>
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="cards">
+      <img src="pics/android.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ANDROID DEVELOPMENT</h5>
+        <br>
+        <p class="card-text">I have experience in software development and services in the field
+                    of information technologies. I took took an internship that focused  more in android
+                    development using Kotlin and android studio, a unified environment to build apps for android phones, tablets and android tv's. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="cards">
+      <img src="pics/web dev.jpg" class="card-img-top" alt="..." height="200px">
+      <div class="card-body">
+        <h5 class="card-title">WEB DEVELOPMENT</h5>
+         <br>
+        <p class="card-text">I'm a self taught web developer with knowledge in HTML, CSS, Javascript, Bootstrap, API's and React.
+      I have a Bsc in Computer Engineering which i studied at the European University of Lefke from the year 2016-2020.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="cards">
+      <img src="pics/sneakers.jpg" class="card-img-top" alt="..." >
+      <div class="card-body">
+        <h5 class="card-title">KIBRIS ORDER</h5>
+         <br>
+        <p class="card-text"> I have been a partner with Kibris Order Ltd since 2018, our main focus is to provide the best sneakers and fashion on the market. We also provide small businesses  the opportunity to grow their business by allowing us to provide them with competitive and efficient suppliers from different parts of the world. </p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<br>
+<br>
+</section>
+
+
+
+<!--CONTACT INFO-->
+<section id="contact">
+<form class="contact-form" action="https://formsubmit.co/el/cikule" method="POST">
+<input type="text" class="contact-form-text" placeholder="name">
+<input type="email" class="contact-form-text" placeholder="email">
+<input type="text" class="contact-form-text" placeholder="phone number">
+<textarea class="contact-form-text" placeholder="message"></textarea>
+<button type="submit" class="contact-form-btn" id="contactbtn">Submit</button> 
+</form>
+<br><br>
+</div>
+</section>
+
+
+
+ <!--SOCIALS-->
+<section id="socials">
+<div class="details" >
+
+<span class="item">
+ <a href="https://www.linkedin.com/in/nomagugu-christine-zemura-305296128/ "target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+</span>
+
+
+<span class="item">
+<a href= "https://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+</span>
+
+<span class="item">
+<a href="https://www.facebook.com/ "target="_blank"><i class="fa-brands fa-facebook"></i></a>
+</span>
+
+<span class="item">
+<a href="mailto:nomzychristine@gmail.com "target="_blank"><i class="fa-solid fa-envelope"></i></a>
+</span>
+
+<span class="item">
+<a href="https://github.com/ "target="_blank"><i class="fa-brands fa-github"></i></a>
+</span>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+</div>
+</section>
+
+
+
+<!--MAPS & ADDRESS-->
+<section id="maps">
+<address id="location" style="color: black;">
+Astra residence, 
+Block B,
+<br>
+Kyrenia,
+<br>
+Cyprus
+</address>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d784.0570653539548!2d33.3244968292257!3d35.33339509284149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7dfbc8a7d82bcd0!2zMzXCsDIwJzAwLjIiTiAzM8KwMTknMzAuMiJF!5e1!3m2!1sen!2s!4v1654340406787!5m2!1sen!2s" width="50%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+</section>
+
+
+
+    <script src="src/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
